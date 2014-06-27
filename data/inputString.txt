@@ -1,0 +1,3 @@
+GLOBALLY:
+FOR ALL x IN /message/player/armor
+	(NOT(x gt 200) AND (x gt 0))

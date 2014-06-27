@@ -1,0 +1,8 @@
+GLOBALLY:
+	FOR ALL x IN /path/to/pingus
+		FOR ALL y IN /x/position
+		IF (x = 0) THEN 
+			NEXT TIME:
+				FOR SOME z IN /y/abcd
+				(((z = x) OR (z = y)) AND ((z = x) AND (z = y)))
+				

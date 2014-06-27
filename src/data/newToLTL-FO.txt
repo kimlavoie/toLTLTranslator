@@ -1,0 +1,36 @@
+FOR ALL
+∀
+FOR SOME
+∃
+IN
+∈
+NOT
+¬
+AND
+∧
+OR
+∨
+IF
+#
+THEN
+→
+GLOBALLY:
+G
+NEXT TIME:
+X
+EVENTUALLY:
+F
+UNTIL:
+U
+MAYBE UNTIL:
+W
+RELEASE:
+R
+gt
+>
+lt
+<
+ea
+≥
+eb
+≤

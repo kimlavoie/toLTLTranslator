@@ -1,0 +1,1 @@
+G (∀ x ∈ /path/to/pingus : (∀ y ∈ /x/position : ((x = 0 ) → (X (∃ z ∈ /y/abcd : ((z = x ) ∨ (z = y ) ) )))))

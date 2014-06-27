@@ -1,0 +1,1 @@
+G (∀ x ∈ /message/player/armor : ((¬ (x > 200 ) ∧ (x > 0 ) ) ))

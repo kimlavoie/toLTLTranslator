@@ -1,0 +1,28 @@
+<exp>                := <loop> | <logic> | <linear_logic>;
+<loop>                  := <for_all> | <exists>;
+
+<for_all>                 := FOR ALL <variable> IN <Xpath> <exp>;
+<exists>                  := FOR SOME <variable> IN <Xpath> <exp>;
+
+<logic>                 := <equal> | <greater> | <lesser> | <not> | <implies> | <and> | <or>;
+<equal>                   := ( <variable_or_Xpath> = <variable_or_Xpath> );
+<greater>                 := ( <variable_or_Xpath> gt <variable_or_Xpath> );
+<lesser>                  := ( <variable_or_Xpath> lt <variable_or_Xpath> );
+<not>                     := NOT <exp>;
+<implies>                 := IF <exp> THEN <exp>;
+<and>                     := ( <exp> AND <exp> );    #to see if better option than ()
+<or>                      := ( <exp> OR <exp> );
+
+<linear_logic>          := <Globally> | <Next> | <Eventually> | <Until> | <Weak_until> | <Release>;
+<Globally>                := GLOBALLY: <exp>;
+<Next>                    := NEXT TIME: <exp>;
+<Eventually>              := EVENTUALLY: <exp>;
+<Until>                   := <exp> UNTIL <exp>;
+<Weak_until>              := <exp> MAYBE UNTIL <exp>;
+<Release>                 := <exp> RELEASE <exp>;
+
+<variable_or_Xpath>     := <variable> | <Xpath>;
+<variable>                := ^[\w\d_-]+; 
+<Xpath>                   := ^/[/\w\]\[""=]+ | ^//[/\w\]\[""=]+;
+
+# cannot put ; at end of instructions
